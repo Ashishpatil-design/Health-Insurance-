@@ -1,0 +1,201 @@
+/* ==========================================
+   Responsive Styles
+   HealthCare Shield
+========================================== */
+
+/* Large Devices (≤1200px) */
+
+@media (max-width:1200px){
+
+.container{
+    max-width:95%;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+}
+
+
+/* Medium Devices (≤992px) */
+
+@media (max-width:992px){
+
+.navbar-nav{
+    text-align:center;
+    margin-top:15px;
+}
+
+.hero{
+    padding:80px 0;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero img{
+    margin-top:40px;
+    width:80%;
+}
+
+.card{
+    margin-bottom:30px;
+}
+
+.counter{
+    margin-bottom:25px;
+}
+
+.newsletter{
+    padding:40px;
+}
+
+}
+
+
+/* Tablets (≤768px) */
+
+@media (max-width:768px){
+
+section{
+    padding:60px 0;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.section-title h2{
+    font-size:30px;
+}
+
+.plan-price{
+    font-size:38px;
+}
+
+.feature-box{
+    margin-bottom:25px;
+}
+
+.table-responsive{
+    font-size:14px;
+}
+
+footer{
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+iframe{
+    height:300px;
+}
+
+}
+
+
+/* Mobile (≤576px) */
+
+@media (max-width:576px){
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.hero{
+    min-height:auto;
+    padding:70px 0;
+}
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.hero .btn{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.btn{
+    width:100%;
+}
+
+.newsletter{
+    padding:25px;
+}
+
+.newsletter h2{
+    font-size:26px;
+}
+
+.counter h2{
+    font-size:32px;
+}
+
+.plan-price{
+    font-size:32px;
+}
+
+.login-card,
+.register-card{
+    margin:15px;
+}
+
+.form-control,
+.form-select{
+    font-size:15px;
+}
+
+}
+
+
+/* Small Mobile (≤400px) */
+
+@media (max-width:400px){
+
+.hero h1{
+    font-size:24px;
+}
+
+.section-title h2{
+    font-size:24px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+.btn{
+    font-size:15px;
+}
+
+}
+
+
+/* Landscape Phones */
+
+@media (max-height:500px){
+
+.hero{
+    min-height:auto;
+    padding:40px 0;
+}
+
+}

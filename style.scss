@@ -1,0 +1,316 @@
+/* ==========================================
+   HealthCare Shield - SCSS
+========================================== */
+
+/* Variables */
+
+$primary: #0D6EFD;
+$secondary: #198754;
+$warning: #FFC107;
+$danger: #DC3545;
+$dark: #212529;
+$light: #F8F9FA;
+$white: #FFFFFF;
+$radius: 15px;
+$transition: .3s;
+$shadow: 0 10px 30px rgba(0,0,0,.12);
+
+/* Mixins */
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-style($bg) {
+    background: $bg;
+    color: $white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: $transition;
+
+    &:hover {
+        opacity: .9;
+        transform: translateY(-3px);
+    }
+}
+
+@mixin card-style {
+    background: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    transition: $transition;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $light;
+    color: $dark;
+}
+
+/* Navbar */
+
+.navbar {
+
+    background: $primary;
+
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .nav-link {
+        color: white;
+
+        &:hover {
+            color: $warning;
+        }
+    }
+}
+
+/* Hero */
+
+.hero {
+
+    background: linear-gradient(135deg, $primary, $secondary);
+    color: white;
+    min-height: 90vh;
+
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 700px;
+    }
+
+    .btn-primary {
+        @include button-style($primary);
+    }
+
+    .btn-success {
+        @include button-style($secondary);
+    }
+}
+
+/* Cards */
+
+.card {
+
+    @include card-style;
+
+    img {
+        transition: .4s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .card-title {
+        color: $primary;
+        font-weight: 700;
+    }
+}
+
+/* Feature Box */
+
+.feature-box {
+
+    @include card-style;
+    padding: 30px;
+    text-align: center;
+
+    i {
+        font-size: 50px;
+        color: $primary;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Pricing */
+
+.plan-card {
+
+    @include card-style;
+    padding: 25px;
+
+    h2 {
+        color: $primary;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    .btn {
+        @include button-style($primary);
+        width: 100%;
+    }
+}
+
+/* Counter */
+
+.counter {
+
+    background: $primary;
+    color: white;
+    padding: 30px;
+    border-radius: $radius;
+    text-align: center;
+
+    h2 {
+        font-size: 45px;
+    }
+}
+
+/* Footer */
+
+footer {
+
+    background: $dark;
+    color: white;
+    padding: 50px 0;
+
+    a {
+        color: white;
+
+        &:hover {
+            color: $warning;
+        }
+    }
+}
+
+/* Forms */
+
+.form-control,
+.form-select {
+
+    border-radius: 10px;
+
+    &:focus {
+
+        border-color: $primary;
+        box-shadow: none;
+
+    }
+}
+
+/* Social Icons */
+
+.social-icons {
+
+    a {
+
+        @include flex-center;
+
+        width: 45px;
+        height: 45px;
+
+        background: $primary;
+        color: white;
+
+        border-radius: 50%;
+
+        transition: $transition;
+
+        &:hover {
+
+            background: $secondary;
+
+        }
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+
+h1{
+
+font-size:42px;
+
+}
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+h1{
+
+font-size:34px;
+
+}
+
+}
+
+.navbar{
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+h1{
+
+font-size:28px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+}
+
+}

@@ -1,0 +1,921 @@
+/* ==========================================
+   HealthCare Shield
+   Main Stylesheet
+   Author : Your Name
+========================================== */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   CSS Variables
+========================================== */
+
+:root{
+
+    --primary:#0D6EFD;
+    --secondary:#198754;
+    --warning:#FFC107;
+    --danger:#DC3545;
+
+    --light:#F8F9FA;
+    --dark:#212529;
+
+    --white:#FFFFFF;
+
+    --gray:#6C757D;
+
+    --shadow:0 10px 30px rgba(0,0,0,.12);
+
+    --radius:15px;
+
+    --transition:.35s;
+
+}
+
+/* ==========================================
+   Reset
+========================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   Common
+========================================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+h1,h2,h3,h4{
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar{
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    font-weight:500;
+
+    margin-left:15px;
+
+    transition:var(--transition);
+
+}
+
+.nav-link:hover{
+
+    color:#FFD54F !important;
+
+}
+
+.navbar .btn{
+
+    border-radius:30px;
+
+}
+
+/* ==========================================
+   Hero
+========================================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#0D6EFD,#198754);
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.hero .btn{
+
+    padding:14px 30px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.hero-img{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Cards
+========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Section Title
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   Feature Cards
+========================================== */
+
+.feature-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.feature-box:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.feature-box:hover p{
+
+    color:white;
+
+}
+
+.feature-box i{
+
+    font-size:50px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.feature-box:hover i{
+
+    color:white;
+
+}
+
+/* ==========================================
+   Plan Cards
+========================================== */
+
+.plan-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.plan-price{
+
+    font-size:45px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.plan-card ul{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+.plan-card li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+/* ==========================================
+   Counter
+========================================== */
+
+.counter{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:20px;
+
+}
+
+.counter h2{
+
+    font-size:45px;
+
+}
+
+/* ==========================================
+   Testimonials
+========================================== */
+
+.testimonial{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.testimonial img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+/* ==========================================
+   Newsletter
+========================================== */
+
+.newsletter{
+
+    background:linear-gradient(135deg,#0D6EFD,#198754);
+
+    color:white;
+
+    border-radius:25px;
+
+    padding:60px;
+
+}
+
+.newsletter input{
+
+    height:55px;
+
+    border-radius:30px;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer{
+
+    background:#0B1F33;
+
+    color:white;
+
+    padding:60px 0 20px;
+
+}
+
+footer a{
+
+    color:#ddd;
+
+}
+
+footer a:hover{
+
+    color:white;
+
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#1d3557;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   Forms
+========================================== */
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+   Scroll Top
+========================================== */
+
+#scrollTop{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:50px;
+
+    height:50px;
+
+    display:none;
+
+    border-radius:50%;
+
+    z-index:999;
+
+}
+
+/* ==========================================
+   Dark Mode
+========================================== */
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.dark-mode .card,
+
+.dark-mode .feature-box,
+
+.dark-mode .testimonial{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.dark-mode p{
+
+    color:#ccc;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero img{
+
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:80px 0;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+.card{
+
+margin-bottom:30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+}
+/* ==========================================
+   Calculator Page
+========================================== */
+
+.calculator-section{
+    background:#f8f9fa;
+}
+
+.calculator-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.calculator-card:hover{
+    transform:translateY(-8px);
+}
+
+.calculator-card h3{
+    color:#0d6efd;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.calculator-card label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.calculator-card input,
+.calculator-card select{
+    height:50px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.calculator-card button{
+    height:50px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.result-card{
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    background:#e9f7ef;
+    border-left:5px solid #198754;
+    text-align:center;
+    display:none;
+}
+
+.result-card h4{
+    color:#198754;
+    font-weight:700;
+}
+
+.result-card p{
+    margin:0;
+    color:#444;
+}
+
+/* ==========================================
+   Information Cards
+========================================== */
+
+.info-card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+    background:#0d6efd;
+    color:#fff;
+}
+
+.info-card:hover p{
+    color:#fff;
+}
+
+.info-card i{
+    font-size:50px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.info-card:hover i{
+    color:#fff;
+}
+
+/* ==========================================
+   Premium Result Animation
+========================================== */
+
+#premiumResult,
+#bmiResult{
+    margin-top:20px;
+    padding:15px;
+    border-radius:12px;
+    background:#f8f9fa;
+    border:2px dashed #0d6efd;
+    font-size:20px;
+    font-weight:600;
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   Calculator Buttons
+========================================== */
+
+.btn-calculate{
+
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    transition:.3s;
+
+}
+
+.btn-calculate:hover{
+
+    background:#084298;
+    color:#fff;
+
+}
+
+.btn-bmi{
+
+    background:#198754;
+    color:#fff;
+    border:none;
+
+}
+
+.btn-bmi:hover{
+
+    background:#146c43;
+    color:#fff;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+
+.calculator-card{
+
+margin-bottom:30px;
+
+}
+
+#premiumResult,
+#bmiResult{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.calculator-card{
+
+padding:20px;
+
+}
+
+.calculator-card h3{
+
+font-size:22px;
+
+}
+
+}
+/* ===============================
+   Hospital Cards
+================================= */
+
+.hospital-card .card{
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.3s;
+
+}
+
+.hospital-card img{
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.hospital-card .card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.hospital-card h4{
+
+font-weight:700;
+
+}
+
+.hospital-card p{
+
+margin-bottom:8px;
+
+}
